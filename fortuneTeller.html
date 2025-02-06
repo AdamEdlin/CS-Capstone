@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Fortune Teller</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Fortune Teller
+    </h1>
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <img height = 250 src = "https://cdn.glitch.global/f0f175f8-17f4-4322-8e82-dcc259631401/Steve-Harvey-Updated-Images-08.05.242.webp?v=1730225611371">
+      <br>
+      <label for="monthfield">Birthmonth:</label>
+      <input type="month" id="monthfield" name="month">
+      <br>
+      <label for="timefield">Favorite time:</label>
+      <input type="time" id="timefield" name="time">
+      <br>
+      <label for="agefield">Age:</label>
+      <input type="number" id="agefield" name="age">
+      <br>
+      <label for="petfield">Do you have a pet?:</label>
+      <input type="checkbox" id="petfield" name="pet">
+      <br>
+      <select>
+        <option value = "red">red</option>
+        <option value = "yellow">yellow</option>
+        <option value = "green">green</option>
+        <option value = "blue">blue</option>
+      </select>
+      <br>
+      <textarea id ="review" name ="review" rows="4" cols="50">
+      Any other info?
+      </textarea>
+      <label for="questionfield">Question:</label>
+      <input type="text" id="questionfield" name="question" placeholder="a yes or no question">
+      <br>
+      <input type="submit">
+    </form>
+    <div id="fortune"></div>
+  </body>
+</html>
